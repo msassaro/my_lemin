@@ -1,0 +1,9 @@
+10
+##end
+# this is a comment
+##cmd useless
+5 5 5
+##start
+1 1 1
+#pas de tube donc pas de path
+0-4

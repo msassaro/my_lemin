@@ -1,0 +1,27 @@
+10
+# on commence par les ROOM
+# et commentaire
+#coller ou pasj
+cuisine 23 13
+##end
+chambre 10 5
+salon 4 12
+salle_de_bain 22 33
+##start
+##useless cmd
+porte_entree 0 0
+escalier 24 32
+garage 59 8
+parking 10 2
+# maintenant les tubes/links
+cuisine-salon
+cuisine-salle_de_bain
+chambre-salle_de_bain
+chambre-escalier
+salon-salle_de_bain
+salon-porte_entree
+salon-escalier
+salon-garage
+salon-parking
+porte_entree-garage
+porte_entree-parking

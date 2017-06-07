@@ -1,0 +1,121 @@
+<!DOCTYYPE html>
+<html>
+<head>
+	<title>MAN Lem-in</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<header>
+		<p id="title"><strong>LEM-IN</strong> general command manual</p>
+		<ul>
+			<li><a class=red href="index.html">DESCRIPTION</a></li>
+			<li><a class=green href="flags.html">FLAGS</a></li>
+			<li><a class=yellow href="format.html">FORMAT</a></li>
+			<li><a class=blue href="functions.html">FUNCTIONS</a></li>
+		</ul>
+	</header>
+
+	<div id=bloc_page>
+
+	<section id="flag_section">
+		<h1 class="green">FLAGS</h1>
+
+	<div>
+		<p class=green>basics</p>
+		<p>
+		This flag will display the basic recuperation
+		informations. Such as number of ants, start and end room,
+		the rooms and tubes.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>matrix</p>
+			<p>
+		This flag will display the cost matrix (or path
+		matrix). It will only works if the roomlen is lower or
+		equal to 50.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>print</p>
+		<p>
+		This flag will display the two above.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>roominfo</p>
+		<p>
+		This flag will displaymore information concerning
+		the rooms, like the weight per room, the degree per room (or
+		the number of possible path per room) and the dispo per room.
+		All of this before searching paths.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>man</p>
+		<p>
+		This is flag print the user manual on the shell.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>errmode</p>
+		<p>
+		This flag is usefull for better error aprehension.
+		In errmode, the lem-in displays more detailed error messages.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>noorder</p>
+		<p>
+		In normal mode, you have to define all the rooms
+		before the tubes. With this mode, you don't care about the order.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>bestpath</p>
+		<p>
+		This flag will display the best path to go for.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>color</p>
+		<p>
+		This flag will put the ants in different color to easily
+		differentiate them at the output.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>redefine_startend{start}{end}</p>
+		<p>
+		This flag will redefine a new start and a new end.
+		You need to have start and end defined as room that
+		is defined. Same requirements as usual rooms.
+		</p>
+	</div>
+
+	<div>
+		<p class=green>redefine_bestpath{start}{end}</p>
+		<p>
+		This flag will redefine start and end and display the
+		best path between the 2.
+		</p>
+	</div>
+
+
+
+	</section>
+
+	</div>
+
+</body>
+</html>

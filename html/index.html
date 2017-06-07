@@ -1,0 +1,54 @@
+<!DOCTYYPE html>
+<html>
+<head>
+	<title>MAN Lem-in</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<header>
+		<p id="title"><strong>LEM-IN</strong> general command manual</p>
+		<ul>
+			<li><a class=red href="index.html">DESCRIPTION</a></li>
+			<li><a class=green href="flags.html">FLAGS</a></li>
+			<li><a class=yellow href="format.html">FORMAT</a></li>
+			<li><a class=blue href="functions.html">FUNCTIONS</a></li>
+		</ul>
+	</header>
+
+	<div id=bloc_page>
+
+	<section>
+		<h1 class="red">SYNOPSIS</h1>
+		<p>
+		The goal of the LEM-IN project is to find the
+		shortest paths between rooms.<br/>
+		You have a starting point and an ending point.<br/>
+		<br/>
+		All ants are starting at the start point and they
+		have to go to the end point. (captain obvious).<br/>
+		<br/>
+		For each room (or node), there is only a capacity
+		of 1 ant. So only one ant per room.
+		</p>	
+	</section>
+
+	<section>
+		<h1 class="red">TECHNICALS</h1>
+		<p>
+		The lem-in read directly from STDIN or a file sent
+		as a STDIN.<br/>
+		<br/>
+		If there is an issue with a line, the recuperation
+		process stops and the lem-in will try to solve<br/>
+		with the informations it has got before the break
+		point.<br/>
+		<br/>
+		If there is some issue, the lem-in will quit
+		with ERROR.
+		</p>
+	</section>
+	</div>
+
+</body>
+</html>

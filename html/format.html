@@ -1,0 +1,57 @@
+<!DOCTYYPE html>
+<html>
+<head>
+	<title>MAN Lem-in</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<header>
+		<p id="title"><strong>LEM-IN</strong> general command manual</p>
+		<ul>
+			<li><a class=red href="index.html">DESCRIPTION</a></li>
+			<li><a class=green href="flags.html">FLAGS</a></li>
+			<li><a class=yellow href="format.html">FORMAT</a></li>
+			<li><a class=blue href="functions.html">FUNCTIONS</a></li>
+		</ul>
+	</header>
+
+	<div id=bloc_page>
+
+	<section>
+		<h1 class="yellow">USAGE</h1>
+		<p>
+		./lem-in ( &lt; [valid file] ) ( optional flags )<br/>
+		./lem-in <br/>
+		--> writing directly from STDIN
+		</p>
+	</section>
+
+
+
+	<section>
+		<h1 class="yellow">FILE FORMAT</h1>
+		<p>
+		General format:<br/>
+		1. first line = number of ants. (from 1 to 10 000)<br/>
+		2. you have the rooms definitions<br/>
+		3. you have the tube definitions<br/>
+<br/>
+		You can define the starting room with: ##start<br/>
+		You can define the ending room with: ##end<br/>
+<br/>
+		A room is defined by a name and coordinates.<br/>
+		name x y<br/>
+		with x and y (between 0 and MAX_INT)<br/>
+<br/>
+		The maximum room len is 2000.<br/>
+		The maximum line lenght is 100.<br/>
+		<br/>
+		No room with the same name or coordinates. Or error.<br/>
+		</p>
+	</section>
+
+	</div>
+
+</body>
+</html>

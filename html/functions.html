@@ -1,0 +1,128 @@
+<!DOCTYYPE html>
+<html>
+<head>
+	<title>MAN Lem-in</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<header>
+		<p id="title"><strong>LEM-IN</strong> general command manual</p>
+		<ul>
+			<li><a class=red href="index.html">DESCRIPTION</a></li>
+			<li><a class=green href="flags.html">FLAGS</a></li>
+			<li><a class=yellow href="format.html">FORMAT</a></li>
+			<li><a class=blue href="functions.html">FUNCTIONS</a></li>
+		</ul>
+	</header>
+
+	<div id=bloc_page>
+
+	<section id="function_section">
+
+		<span class=blue>main.c</span>
+		<p>
+void <span class=green>ft_check_after_env_filled(t_lem *env)</span><br/>
+void <span class=green>ft_after_recup(t_lem *env)</span><br/>
+void <span class=green>ft_recup(t_lem *env)</span><br/>
+void <span class=green>ft_init_env(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>check_room.c</span>
+		<p>
+int	<span class=green>			ft_check_params(char *tab[3])</span><br/>
+int	<span class=green>			ft_param_to_room(t_room *room, char *line, t_lem *env)</span><br/>
+int	<span class=green>			ft_check_room_valid(char *line, t_room *room, t_lem *env)</span><br/>
+void	<span class=green>		ft_room_add_list(t_lem *env, t_room *room)</span><br/>
+void	<span class=green>		ft_create_room(char *line, t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>check_tube.c</span>
+		<p>
+void	<span class=green>		ft_tube_add_list(t_lem *env, t_tube *tube)</span><br/>
+int		<span class=green>		ft_tube_creation(char *line, t_lem *env)</span><br/>
+void	<span class=green>		ft_init_tube_len(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>check_line.c</span>
+		<p>
+void	<span class=green>		ft_check_first_line(char *line, t_lem *env)</span><br/>
+void	<span class=green>		ft_check_line_sharp_2(t_lem *env)</span><br/>
+void	<span class=green>		ft_check_line_sharp(char *line, t_lem *env)</span><br/>
+void	<span class=green>		ft_check_line_valid_2(char *line, t_lem *env)</span><br/>
+int		<span class=green>		ft_check_line_valid(char *line, t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>double_check_room.c</span>
+		<p>
+int	<span class=green>			ft_room_occurs(t_lem *env, t_room *room)</span><br/>
+int	<span class=green>			ft_double_room_name(t_lem *env)</span><br/>
+int	<span class=green>			ft_location_occurs(t_lem *env, t_room *room)</span><br/>
+int	<span class=green>			ft_double_room_location(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>cost_matrix.c</span>
+		<p>
+void	<span class=green>		ft_print_cost_matrix(t_lem *env)</span><br/>
+void	<span class=green>		ft_cost_matrix_to_env(t_lem *env, int **matrix, int len)</span><br/>
+void	<span class=green>		ft_init_cost_matrix(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>ft_move.c</span>
+		<p>
+int	<span class=green>			ft_min_weight(t_lem *env, int room, int rm)</span><br/>
+void	<span class=green>		ft_go(t_lem *env, int min, int i, int room)</span><br/>
+void	<span class=green>		ft_move_ant(t_lem *env, int ant[])</span><br/>
+void	<span class=green>		ft_move_ants(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>weight_degree.c</span>
+		<p>
+void	<span class=green>		ft_recursive_weight(t_lem *env, int room, int weight)</span><br/>
+void	<span class=green>		ft_create_degree_weight(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>pathlen.c</span>
+		<p>
+void <span class=green>ft_search_pathlen(t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>utils.c</span>
+		<p>
+int	<span class=green>			ft_str_alpha_digit_underscore(char *str)</span><br/>
+void	<span class=green>		ft_init_t_lem(t_lem *env)</span><br/>
+int		<span class=green>		ft_len_room(t_room *room);</span><br/>
+char	<span class=green>		*ft_get_room_name(int x, t_lem *env)</span><br/>
+int		<span class=green>		ft_exists_tube(int x, int y, t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>utils2.c</span>
+		<p>
+void	<span class=green>		ft_print_basics(t_lem *env)</span><br/>
+void	<span class=green>		ft_print_matrix(t_lem *env)</span><br/>
+void	<span class=green>		ft_explode(char *line, char separator, char *(*tab)[3])</span><br/>
+void	<span class=green>		ft_error_file_check(char *msg, t_lem *env)</span><br/>
+void	<span class=green>		ft_error(char *msg, t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>utils3.c</span>
+		<p>
+void	<span class=green>		ft_user_manual(void);</span><br/>
+void	<span class=green>		ft_redefine_2(char *av, t_lem *env)</span><br/>
+void	<span class=green>		ft_redefine(char *av, t_lem *env)</span><br/>
+void	<span class=green>		ft_create_flags(char *av, t_lem *env)</span><br/>
+void	<span class=green>		ft_add_line_to_env_record(char *line, t_lem *env)</span><br/>
+		</p>
+
+		<span class=blue>utils4.c</span>
+		<p>
+int	<span class=green>			ft_check_redefine_room_exist(t_lem *e)</span><br/>
+void	<span class=green>		ft_find_start_end_value(t_lem *env)</span><br/>
+void	<span class=green>		ft_create_room_tab(t_lem *env)</span><br/>
+		</p>
+
+	</section>
+	</div>
+
+</body>
+</html>
